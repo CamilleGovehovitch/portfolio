@@ -1,0 +1,25 @@
+body{
+  background-color: yellow;
+}
+.navbar{
+  background-color: blue;
+
+}
+.prez{
+background-color: red;
+}
+.parcours_pro{
+background-color: lightblue;
+}
+.diplome{
+background-color: maroon;
+}
+.centre_interet{
+background-color: pink;
+}
+.demarches{
+background-color: grey;
+}
+.footer{
+  background-color: green;
+}
