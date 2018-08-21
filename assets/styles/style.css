@@ -6,7 +6,7 @@ background-image: image('./assets/imgs/drum.jpg');
 }
 
 .navbar{
-  background-color:rgb(18,18,18);
+  background-color:rgb(169, 179, 48);
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -79,53 +79,87 @@ background-image: image('./assets/imgs/drum.jpg');
   font-weight: bold;
   }
 .prez{
-display: flex;
-flex-direction: row;
-justify-content: flex-start;
-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height:90vh;
+  width: 100%;
+  background-color: rgb(18,18,18);
+
 }
-.prez img{
+.prez .intro{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
   height: 100%;
-  width: 35%;
-  border: solid;
 }
-.prez h2{
+.prez .intro .intro-img{
+  width: 50%;
+  background-image: url('../imgs/Tomoe.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.prez .intro .intro-text {
+  width: 50%;
+  padding: 20px;
+  color:white;
+}
+/* .prez .intro .intro-img img{
+  position: relative;
+  height: auto;
+  width: 100%;
+  border: solid;
+} */
+.prez .intro .intro-text h2{
   text-align: center;
-  font-size: 30px;
+  font-size: 60px;
   font-family: 'Great Vibes', cursive;
   font-weight: bold;
-  padding: 10px 30px;
+  padding-bottom: 50px;
 }
 .prez p{
   font-size: 22px;
-  padding: 5px 10px;
+  margin: 0px 0px 15px 0px;
+  line-height: 1.3em;
 }
 .prez .para{
   border: solid;
   border-color: black;
   background-color: darkgrey;
 }
-.prez a{
+.prez .intro .intro-text .back-up{
   font-family: 'Great Vibes', cursive;
   font-weight: bold;
+  font-size: 20px;
   text-decoration: none;
+  color: black;
+  text-align: right;
+  width:100%;
+  padding-top:30px;
+  position: relative;
+  display: block;
+  color:white;
 }
 .parcours_pro{
-  background-image: url(http://aixautomatisme.fr/wp-content/uploads/2013/03/exemple-fond-pour-site-internet.jpg);
-  border: solid;
+background-color: white;
+padding: 20px;
 }
-.parcours_pro h2{
+.parcours_pro .pro{
+  padding-top:20px;
+}
+.parcours_pro .pro h2{
   text-align: center;
-  font-size: 30px;
+  font-size: 60px;
   font-family: 'Great Vibes', cursive;
   font-weight: bold;
-  padding: 10px 30px;
+  margin: 0px 0px 50px 0px;
 }
-.parcours_pro h4{
+/* .parcours_pro .pro h4{
   font-size: 20px;
   font-weight: bold;
   padding: 20px 30px;
-}
+} */
 .parcours_pro ul{
   font-size: 20px;
 }
@@ -141,126 +175,256 @@ height: 300px;
 .parcours_pro p a{
   text-decoration: none;
 }
-.club{
+.iss{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   width:750px;
   margin: auto;
-  background-color: rgba(181, 62, 181, 0.41);
-  border: solid;
-  border-color: black;
+  background-color: rgb(223, 211, 227);
   margin-bottom: 20px;
+  padding: 20px 35px;
+  border-radius: 5px;
+  -moz-box-shadow: 10px 10px 5px 0px rgba(89, 89, 89, 0.4);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(89, 89, 89, 0.4);
+  -o-box-shadow: 10px 10px 5px 0px rgba(89, 89, 89, 0.4);
+  box-shadow: 3px 3px 10px 0px rgba(89, 89, 89, 0.2);
 }
-.club h4{
-  text-align: center;
-  text-decoration: underline;
-}
-.club ul{
-  margin-right: auto;
-}
-.real{
-  width: 750px;
-  margin: auto;
+
+.iss .title-container{
+  display: flex;
+  flex-direction: row;
   margin-bottom: 20px;
-  background-color: darkgrey;
-  border: solid;
-  border-color: black;
-  background-color: rgba(181, 62, 181, 0.41);
 
 }
-.real h4{
-  text-align: center;
-  text-decoration: underline;
+.iss .title-container .title{
+  width: 65%;
 }
-.tech{
-  width: 750px;
-  margin: auto;
-  margin-bottom: 20px;
-  border: solid;
-  border-color: black;
-  background-color: rgba(181, 62, 181, 0.41);
-
+.iss .title-container .title h4{
+  font-size: 20px;
+  font-weight: bold;
 }
-.tech h4{
-  text-align: center;
-  text-decoration: underline;
+.iss .title-container .date{
+  width: 35%;
 }
-.assis{
-  width: 750px;
-  margin: auto;
-  margin-bottom: 20px;
-  background-color: rgba(181, 62, 181, 0.41);
-  border:solid;
-  border-color: black;
+.iss .title-container .date h5{
+  font-size: 14px;
+  font-style: italic;
+  font-weight: bold;
+  color: black;
+  text-align: right;
 }
-.assis h4{
-  text-align: center;
-  text-decoration:
-
+.iss .body ul{
+  margin-left: 20px;
+  padding-left: 20px;
 }
-.radio{
-  width: 750px;
-  margin:auto;
-  margin-bottom:20px;
-  background-color: rgba(181, 62, 181, 0.41);
-  border:solid;
-  border-color: black;
-}
-.radio h4{
-  text-align: center;
-  text-decoration: underline;
-}
-.inge{
-  width: 750px;
-  margin: auto;
-  margin-bottom: 20px;
-  background-color: rgba(181, 62, 181, 0.41);
-  border: solid;
-  border-color: black;
-}
-.inge h4{
-  text-align: center;
-  text-decoration: underline;
-}
-.autres{
-  width: 750px;
-  margin: auto;
-  margin-bottom:20px;
-  background-color: rgba(181, 62, 181, 0.41);
-  border: solid;
-  border-color: black;
-}
-.autres h4{
-  text-align: center;
-  text-decoration: underline;
+.iss .body ul li{
+  margin-bottom: 10px;
+  list-style-type: disc;
 }
 .diplome{
-  background-color: rgba(181, 62, 181, 0.41);
-
+  background-color: rgb(129, 157, 210);
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
 }
-.diplome h2{
+.diplome .diplome-title{
+  width:100%;
+  padding: 20px;
+}
+.diplome .diplome-body{
+  position: relative;
+  display: flex;
+  width:100%;
+}
+.diplome .diplome-title h2{
   text-align: center;
-  font-size: 30px;
+  font-size: 60px;
   font-family: 'Great Vibes', cursive;
   font-weight: bold;
-  padding: 10px 30px;
+  margin: 0px 0px 30px 0px;
 }
-.diplome ul{
+.diplome .diplome-body ul{
+  position: relative;
   text-align: center;
-  margin: auto;
-  border: solid;
   border-color: black;
-  width: 900px;
+  max-width: 100%;
+  width: 100%;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.diplome .diplome-body ul li{
+  padding: 15px;
+  border-radius: 5px;
+  max-width: 30%;
+  background-color: white;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.diplome .diplome-body ul li h4{
+  font-size:25px;
+  font-weight:bold;
+  color:rgb(58, 58, 71);
+  margin-bottom: 15px;
+}
+.diplome .diplome-body ul li h3{
+  font-size:35px;
+  font-weight:bold;
+  color:rgb(0, 0, 31);
+  margin-bottom: 15px;
+}
+.diplome .diplome-body ul li h5{
+  font-size:25px;
+  font-weight:bold;
+  color:rgb(58, 58, 71);
+  font-style: italic;
+}
+
+.centre_interet{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  position: relative;
+  padding: 20px;
+  width: 100%;
+  background-color: rgba(181, 62, 181, 0.41);
+}
+.centre_interet_header{
+  width: 100%;
+}
+.centre_interet_header h2{
+  text-align: center;
+  font-size: 60px;
+  font-family: 'Great Vibes', cursive;
+  font-weight: bold;
+  margin: 0px 0px 30px 0px;
+}
+.centre_interet_body{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.centre_interet_item{
+  width: 30%;
+  min-height: 80vh;
+  background-color: white;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+}
+.centre_interet_text{
+  background-color: rgb(100, 240, 14);
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.centre_interet_text h3{
+  font-size: 25px;
+}
+.centre_interet_text p{
   font-size: 20px;
 }
-.diplome ul li{
-  padding: 2px;
+.centre_interet_text a{
+  color: black;
 }
-.diplome
-.centre_interet{
-  background-color: rgba(181, 62, 181, 0.41);
+.centre_interet_text .status{
+  text-align: right;
+}
+.centre_interet_item .centre_interet_thumb{
+  width: 100%;
+  height: 65%;
+  border-radius: 7px 7px 0 0;
+  background-size: cover;
+}
+.centre_interet_item .centre_interet_thumb.nochys{
+  background-image: url('../imgs/nochys.jpg');
+}
+.centre_interet_item .centre_interet_thumb.ydwc{
+  background-image: url('../imgs/ydwc.jpg');
+}
+.centre_interet_item .centre_interet_thumb.tomoe{
+  background-image: url('../imgs/tom.jpg');
+}
+.centre_interet_item .centre_interet_text{
+  padding: 20px;
+}
+.centre_interet_footer{
+
 }
 .demarches{
   background-color: rgba(181, 62, 181, 0.41);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
+.demarches-header{
+  background-color: rgb(87, 105, 0);
+  margin: 20px;
+}
+.demarches-header h2{
+  text-align: center;
+  font-size: 60px;
+  font-family: 'Great Vibes', cursive;
+  font-weight: bold;
+  margin: 0px 0px 30px 0px;
+}
+.demarches-text{
+  padding: 20px 150px;
+}
+.demarches-text p{
+  margin-bottom: 15px;
+  font-size: 20px;
+  text-align: justify;
+}
+.achievements-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px;
+}
+.achievements-items{
+  width: 35%;
+  background-color: white;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.achievements-items.achievements{
+
+}
+.achievements-items.achievements .achievements-list .list-item h3{
+  font-size:20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.achievements-items.achievements .achievements-list .list-item ul{
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+.achievements-items.achievements .achievements-list .list-item h4{
+  font-size:18px;
+  font-weight: bold;
+}
+.achievements-items.achievements .achievements-list .list-item h4 span{
+  float: right;
+  margin-right: 50px;
+}
+.achievements-items.achievements .achievements-list .list-item li{
+  margin-right: 50px;
+  list-style: disc;
+}
+
 .footer{
   background-color: rgba(181, 62, 181, 0.41);
 }
