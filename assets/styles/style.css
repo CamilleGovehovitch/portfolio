@@ -1,19 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=Great+Vibes');
 @import url('https://fonts.googleapis.com/css?family=Do+Hyeon');
+@import url('https://fonts.googleapis.com/css?family=Sawarabi+Gothic');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
 
-body{
-background-image: image('./assets/imgs/drum.jpg');
+body {
+  
+}
+#ancre{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
 }
 
 .navbar{
-  background-color:rgb(169, 179, 48);
+  background-color:rgba(92, 200, 255, 1);
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
   font-size: 0px;
   width: 100%;
-  height: 70px;
+  height: 60px;
+  position: fixed;
+  z-index: 10;
 }
 .navbar .navigation{
   display: flex;
@@ -24,7 +33,7 @@ background-image: image('./assets/imgs/drum.jpg');
   font-size: 14px;
   width: 80%;
   height: 100%;
-  font-family: 'Do Hyeon', sans-serif;
+  font-family: "Sawarabi Gothic", sans-serif;
 
 
 }
@@ -44,12 +53,12 @@ background-image: image('./assets/imgs/drum.jpg');
   padding: 5px 10px;
   text-align: center;
   box-sizing: border-box;
-  border-bottom: 0px solid black;
+  border-bottom: 0px solid rgba(222, 193, 255, 1);
   transition: border-bottom 300ms;
 }
 .navbar .navigation ul li:hover{
-  border-bottom: 10px solid red;
-
+  border-bottom: 5px solid  rgba(222, 193, 255, 1);
+  padding-bottom: 10px;
 }
 .navbar .navigation ul li a{
   height: 100%;
@@ -75,7 +84,7 @@ background-image: image('./assets/imgs/drum.jpg');
   color: white;
 }
 .navbar .logo h2{
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Oswald', sans-serif;
   font-weight: bold;
   }
 .prez{
@@ -84,7 +93,8 @@ background-image: image('./assets/imgs/drum.jpg');
   justify-content: flex-start;
   height:90vh;
   width: 100%;
-  background-color: rgb(18,18,18);
+  background-color:white;
+  padding-top: 60px;
 
 }
 .prez .intro{
@@ -103,7 +113,7 @@ background-image: image('./assets/imgs/drum.jpg');
 .prez .intro .intro-text {
   width: 50%;
   padding: 20px;
-  color:white;
+  color:black;
 }
 /* .prez .intro .intro-img img{
   position: relative;
@@ -114,7 +124,7 @@ background-image: image('./assets/imgs/drum.jpg');
 .prez .intro .intro-text h2{
   text-align: center;
   font-size: 60px;
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Oswald', sans-serif;
   font-weight: bold;
   padding-bottom: 50px;
 }
@@ -122,14 +132,16 @@ background-image: image('./assets/imgs/drum.jpg');
   font-size: 22px;
   margin: 0px 0px 15px 0px;
   line-height: 1.3em;
+  color: black;
 }
 .prez .para{
-  border: solid;
+  border: solid;  background-color: rgba(181, 62, 181, 0.41);
+
   border-color: black;
   background-color: darkgrey;
 }
 .prez .intro .intro-text .back-up{
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Oswald', sans-serif;
   font-weight: bold;
   font-size: 20px;
   text-decoration: none;
@@ -142,8 +154,14 @@ background-image: image('./assets/imgs/drum.jpg');
   color:white;
 }
 .parcours_pro{
-background-color: white;
+background-color: rgba(52, 54, 51, 1);
 padding: 20px;
+display: flex;
+flex-direction: column;
+}
+.my_parcours{
+  display: flex;
+  flex-direction: row;
 }
 .parcours_pro .pro{
   padding-top:20px;
@@ -151,7 +169,7 @@ padding: 20px;
 .parcours_pro .pro h2{
   text-align: center;
   font-size: 60px;
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Oswald', sans-serif;
   font-weight: bold;
   margin: 0px 0px 50px 0px;
 }
@@ -164,7 +182,7 @@ padding: 20px;
 .parcours_pro p {
   padding: 20px 30px;
   font-size: 30px;
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Oswald', sans-serif;
   font-weight: bold;
 }
 .parcours_pro p a{
@@ -172,16 +190,22 @@ padding: 20px;
   color: black;
   margin-left: 900px;
 }
+.container_parcours_pro{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+  height: 100%;
+}
 .iss{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width:750px;
-  margin: auto;
-  background-color: rgb(223, 211, 227);
-  margin-bottom: 20px;
-  padding: 20px 35px;
+  margin: auto auto 20px auto;
+  background-color: white;
   border-radius: 5px;
+  width:90%;
+  height:300px;
   -moz-box-shadow: 10px 10px 5px 0px rgba(89, 89, 89, 0.4);
   -webkit-box-shadow: 10px 10px 5px 0px rgba(89, 89, 89, 0.4);
   -o-box-shadow: 10px 10px 5px 0px rgba(89, 89, 89, 0.4);
@@ -189,38 +213,45 @@ padding: 20px;
 }
 
 .iss .title-container{
-  display: flex;
   flex-direction: row;
   margin-bottom: 20px;
 
 }
 .iss .title-container .title{
-  width: 65%;
+  width: 100%;
+  margin: 15px auto;
 }
 .iss .title-container .title h4{
   font-size: 20px;
+  line-height: 24px;
   font-weight: bold;
+  text-align: center;
 }
 .iss .title-container .date{
-  width: 35%;
+  width: 100%;
 }
 .iss .title-container .date h5{
   font-size: 14px;
   font-style: italic;
   font-weight: bold;
   color: black;
-  text-align: right;
+  text-align: center;
+
 }
 .iss .body ul{
-  margin-left: 20px;
-  padding-left: 20px;
 }
 .iss .body ul li{
   margin-bottom: 10px;
-  list-style-type: disc;
+  list-style-type: none;
+  font-size: 16px;
+  line-height: 18px;
 }
 .diplome{
   background-color: rgb(129, 157, 210);
+  background-image:url("../imgs/drum.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
   min-height: 100vh;
   padding: 20px;
   display: flex;
@@ -240,9 +271,10 @@ padding: 20px;
 .diplome .diplome-title h2{
   text-align: center;
   font-size: 60px;
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Oswald', sans-serif;
   font-weight: bold;
   margin: 0px 0px 30px 0px;
+  color: white;
 }
 .diplome .diplome-body ul{
   position: relative;
@@ -266,11 +298,10 @@ padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  -moz-box-shadow: 10px 10px 5px 0px #9b9b9b;
-  -webkit-box-shadow: 10px 10px 5px 0px #9b9b9b;
-  -o-box-shadow: 10px 10px 5px 0px #9b9b9b;
-  box-shadow: 10px 10px 5px 0px #9b9b9b;
-  filter:progid:DXImageTransform.Microsoft.Shadow(color=#9b9b9b, Direction=134, Strength=5);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(89, 89, 89, 0.4);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(89, 89, 89, 0.4);
+  -o-box-shadow: 10px 10px 5px 0px rgba(89, 89, 89, 0.4);
+  box-shadow: 3px 3px 10px 0px rgba(89, 89, 89, 0.2);
 }
 .diplome .diplome-body ul li h4{
   font-size:25px;
@@ -292,7 +323,7 @@ padding: 20px;
 }
 .diplome p{
   text-align: right;
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Oswald', sans-serif;
   font-weight: bold;
   font-size: 20px;
 }
@@ -314,7 +345,7 @@ padding: 20px;
   position: relative;
   padding: 20px;
   width: 100%;
-  background-color: rgba(181, 62, 181, 0.41);
+  background-color: rgba(52, 54, 51, 1);
 }
 .centre_interet_header{
   width: 100%;
@@ -322,31 +353,41 @@ padding: 20px;
 .centre_interet_header h2{
   text-align: center;
   font-size: 60px;
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Oswald', sans-serif;
   font-weight: bold;
   margin: 0px 0px 30px 0px;
+  color: white;
 }
 .centre_interet_body{
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 .centre_interet_item{
   width: 30%;
   min-height: 80vh;
+  margin-bottom: 30px;
   background-color: white;
   border-radius: 7px;
   display: flex;
   flex-direction: column;
-  -moz-box-shadow: 10px 10px 5px 0px #9b9b9b;
-  -webkit-box-shadow: 10px 10px 5px 0px #9b9b9b;
-  -o-box-shadow: 10px 10px 5px 0px #9b9b9b;
-  box-shadow: 10px 10px 5px 0px #9b9b9b;
-  filter:progid:DXImageTransform.Microsoft.Shadow(color=#9b9b9b, Direction=134, Strength=5);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(89, 89, 89, 0.4);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(89, 89, 89, 0.4);
+  -o-box-shadow: 10px 10px 5px 0px rgba(89, 89, 89, 0.4);
+  box-shadow: 3px 3px 10px 0px rgba(89, 89, 89, 0.2);
+}
+.centre_interet_item_title{
+  width: 100%;
+  text-align: center;
+  font-size: 60px;
+  margin-bottom: 30px;
+  font-family: 'Oswald', sans-serif;
+  color: white;
 }
 .centre_interet_text{
-  background-color: rgb(100, 240, 14);
+  background-color:white;
   height: 35%;
   display: flex;
   flex-direction: column;
@@ -354,6 +395,7 @@ padding: 20px;
 }
 .centre_interet_text h3{
   font-size: 25px;
+  font-family: 'Oswald', sans-serif;
 }
 .centre_interet_text p{
   font-size: 20px;
@@ -369,6 +411,7 @@ padding: 20px;
   height: 65%;
   border-radius: 7px 7px 0 0;
   background-size: cover;
+  box-shadow: inset 0px -5px 5px rgba(0,0,0,0.3);
 }
 .centre_interet_item .centre_interet_thumb.nochys{
   background-image: url('../imgs/nochys.jpg');
@@ -379,6 +422,13 @@ padding: 20px;
 .centre_interet_item .centre_interet_thumb.tomoe{
   background-image: url('../imgs/tom.jpg');
 }
+
+.centre_interet_item .centre_interet_thumb.paintone{
+  background-image: url('../imgs/cave.jpg');
+}
+.centre_interet_item .centre_interet_thumb.painttwo{
+  background-image: url('../imgs/graffiti.jpg');
+}
 .centre_interet_item .centre_interet_text{
   padding: 20px;
 }
@@ -387,8 +437,35 @@ padding: 20px;
   color: black;
   text-decoration: none;
 }
+/* .centre_interet_paint_container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+} */
+/* .centre_interet_paint_container .centre_interet_paint{
+  height: 80%;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.centre_interet_paint_container .centre_interet_paint .paint{
+  height:80%;
+  width: 40%;
+  overflow: hidden;
+}
+.centre_interet_paint_container .centre_interet_paint .paint img{
+  height: 100%;
+  margin-left: -5%;
+  transition: all ease 1s;
+}
+.centre_interet_paint_container .centre_interet_paint .paint img:hover{
+  transform: scale(1.4);
+} */
 .demarches{
-  background-color: rgba(181, 62, 181, 0.41);
+  background-color:rgba(125, 112, 186, 1);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -399,19 +476,22 @@ padding: 20px;
 .demarches-header h2{
   text-align: center;
   font-size: 60px;
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Oswald', sans-serif;
   font-weight: bold;
   margin: 0px 0px 30px 0px;
 }
 .demarches-text{
   padding: 20px 150px;
-  width: 100%;
+  margin:auto;
+  width: 70%;
   height: 65%;
   border-radius: 7px 7px 0 0;
   box-sizing: border-box;
-
-
-}
+  background-color:white;
+  -moz-box-shadow: 10px 10px 5px 0px rgba(89, 89, 89, 0.4);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(89, 89, 89, 0.4);
+  -o-box-shadow: 10px 10px 5px 0px rgba(89, 89, 89, 0.4);
+  box-shadow: 3px 3px 10px 0px rgba(89, 89, 89, 0.2);}
 .demarches-text p{
   margin-left: 40px;
   margin-right: 40px;
@@ -419,7 +499,6 @@ padding: 20px;
   font-size: 20px;
   text-align: justify;
   background-color: white;
-  background-color: rgba(181, 62, 181, 0.41);
 }
 .achievements-container{
   display: flex;
@@ -441,21 +520,17 @@ padding: 20px;
 }
 .achievements-items.achievements{
   border-radius: 5px;
-  -moz-box-shadow: 10px 10px 5px 0px #9b9b9b;
-  -webkit-box-shadow: 10px 10px 5px 0px #9b9b9b;
-  -o-box-shadow: 10px 10px 5px 0px #9b9b9b;
-  box-shadow: 10px 10px 5px 0px #9b9b9b;
-  filter:progid:DXImageTransform.Microsoft.Shadow(color=#9b9b9b, Direction=134, Strength=5);
-  background-color: rgb(242, 255, 0);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(89, 89, 89, 0.4);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(89, 89, 89, 0.4);
+  -o-box-shadow: 10px 10px 5px 0px rgba(89, 89, 89, 0.4);
+  box-shadow: 3px 3px 10px 0px rgba(89, 89, 89, 0.2);
 
 }
 .achievements-items.site {
-  -moz-box-shadow: 10px 10px 5px 0px #9b9b9b;
-  -webkit-box-shadow: 10px 10px 5px 0px #9b9b9b;
-  -o-box-shadow: 10px 10px 5px 0px #9b9b9b;
-  box-shadow: 10px 10px 5px 0px #9b9b9b;
-  filter:progid:DXImageTransform.Microsoft.Shadow(color=#9b9b9b, Direction=134, Strength=5);
-  background-color: rgb(242, 255, 0);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(89, 89, 89, 0.4);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(89, 89, 89, 0.4);
+  -o-box-shadow: 10px 10px 5px 0px rgba(89, 89, 89, 0.4);
+  box-shadow: 3px 3px 10px 0px rgba(89, 89, 89, 0.2);
 }
 .achievements-items.site p{
   margin-bottom: 15px;
@@ -489,7 +564,8 @@ padding: 20px;
 }
 
 .footer{
-  background-color: rgba(181, 62, 181, 0.41);
+  background-color: rgba(92, 200, 255, 1);
+  height: 60px;
   width: 100%;
 }
 .footer .nav-footer{
@@ -507,12 +583,11 @@ padding: 20px;
   justify-content: space-between;
   padding-right: 20px;
 }
-.footer-img img{
-  height: 50px;
-  width: 50px;
+.footer-img i{
+  color: black;
 }
 .back-up{
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Oswald', sans-serif;
   font-weight: bold;
   font-size: 30px;
   text-decoration: none;
